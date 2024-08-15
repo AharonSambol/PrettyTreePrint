@@ -1,5 +1,6 @@
 import colorama.initialise
 from PrettyPrint.Utils.StyleAwareUtils import ljust, text_width
+from typing import List
 
 
 class NodeFormatter:
@@ -12,7 +13,7 @@ class NodeFormatter:
 
     def __init__(
             self,
-            lines: list[str], *, height: int, width: int,
+            lines: List[str], *, height: int, width: int,
             middle_height: int = None, middle_width: int = None
     ):
         self.lines = lines
